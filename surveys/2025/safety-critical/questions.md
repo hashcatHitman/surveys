@@ -1,6 +1,10 @@
 # Rust Language & Ecosystem for Safety-Critical: Project Goals 2026
 
-Hey there! Thanks for taking the time for this survey. Please provide your feedback on those things, which, if available would improve the ability for your company to use the Rust programming language in a safety-critical context. We will use your feedback to inform which Rust Project Goal(s) the Safety-Critical Rust Consortium should propose for 2026.
+Hey there! Are you a user of Rust in a safety-critical industry (Automotive, Medical, etc.)? Thanks for taking the time for this survey. Please provide your feedback on features, which, if available, would improve the ability for your company to use the Rust programming language in a safety-critical context.
+
+We will use your feedback to inform which [Rust Project Goal(s)](https://rust-lang.github.io/rust-project-goals/index.html) the [Safety-Critical Rust Consortium](https://github.com/rustfoundation/safety-critical-rust-consortium) should propose for 2026.
+
+The survey will be open until 2025-12-19, 11:59PM PST.
 
 ### Your Safety-Critical industry
 
@@ -11,6 +15,8 @@ Type: free form
 Type: free form
 
 ### Which of the following Rust language features, if available, would improve the ability for you to use the Rust programming language in safety-critical software development?
+
+Explanation of the various options:
 
 Type: matrix
 
@@ -25,6 +31,8 @@ Rows:
 - Deterministic Code Generation
 - Coverage Instrumentation for Macros
 - Contracts (pre/post condition)
+- QNX Migrated to Higher Tier
+- VxWorks Migrated to Higher Tier
 
 Columns:
 
@@ -49,6 +57,7 @@ Rows:
 - Safety-Certified Async Runtime
 - Safety-Certified libcore
 - Safety-Certified libstd
+- User-extensible Clippy
 
 Columns:
 
@@ -61,9 +70,13 @@ Columns:
 
 Type: free form
 
-### Any other thoughts or feedback can be placed here:
+### Do you have any other thoughts or feedback to share about using Rust in a Safety-Critical industry?
 
 Type: free form
+
+#### Contact information
+
+If your group or organization considers contributing engineering time or financial funds to seeing a feature be completed, please make sure include your contact information below so we can discuss further.
 
 ### Your Name
 
