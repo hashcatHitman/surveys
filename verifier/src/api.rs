@@ -82,6 +82,7 @@ impl Client {
         Ok(elements.questions().collect())
     }
 
+    #[allow(dead_code)]
     // TODO: Get all elements from survey
     // filter "text" and "question" type
     fn fetch_elements(
