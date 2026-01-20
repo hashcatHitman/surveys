@@ -67,7 +67,7 @@ Tools:
 Type: select all that apply
 
 - Getting stack traces from hung/crashed processes
-- Step-debugging
+- Line-by-line stepping
 - Debugging async code
 - Curiosity/learning
 - Other (open response)
