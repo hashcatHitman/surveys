@@ -8,9 +8,12 @@ they face, and what can be done to improve the experience.
 
 ### What tools do you use to debug Rust programs on which operating systems?
 
+To clarify: the "operating system" being asked for is the one on the machine you
+write your code using, not the one your code runs on.
+
 Type: matrix (select all that apply)
 
-Operating System:
+Your Operating System:
 
 - Linux
 - Windows 10/11
@@ -18,9 +21,6 @@ Operating System:
 - Windows Subsystem for Linux
 - macOS
 - Other
-
-<!-- TODO: Are we asking for the target platform or developer platform? I'm
-thinking the latter. -->
 
 Tools:
 
