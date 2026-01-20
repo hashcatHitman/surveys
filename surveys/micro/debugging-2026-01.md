@@ -4,6 +4,24 @@ This is a quick survey about debugging support in Rust. The goal is to
 understand how Rustaceans use debuggers when working with Rust, what pain points
 they face, and what can be done to improve the experience.
 
+## Cohort Questions
+
+### Do you use Rust?
+
+Type: select one
+
+- Yes, I use Rust [`NEXT`](#what-tools-do-you-use-to-debug-rust-programs-on-which-operating-systems)
+- No, I don't currently use Rust, but I have in the past [`NEXT`](#were-issues-with-debugging-support-the-primary-reason-why-you-stopped-using-rust)
+- No, I have never used Rust [`NEXT`](#is-there-anything-else-you-would-like-to-tell-us-about-debugging-support-in-rust)
+
+### Were issues with debugging support the primary reason why you stopped using Rust?
+
+Type: select one
+
+- Yes
+- No, but they were one of the reasons why I stopped using Rust
+- No [`NEXT`](#is-there-anything-else-you-would-like-to-tell-us-about-debugging-support-in-rust)
+
 ## Your use of debuggers in Rust
 
 ### What tools do you use to debug Rust programs on which operating systems?
