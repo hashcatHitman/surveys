@@ -76,14 +76,14 @@ Type: select all that apply
 
 ## Difficulties using debuggers in Rust
 
-### When you don't use a dedicated debugger (as opposed to print debugging or none at all), why don't you?
+### What are some of your struggles with debugging Rust?
 
 Type: select all that apply
 
 - I don't need to debug because my code works.
 - I don't know how to use debuggers.
-- It's easier to solve problems through other means.
-- It's faster to solve problems through other means.
+- It's easier or faster to solve problems through print debugging or logs.
+- It's easier or faster to let an AI model debug my code.
 - The types from external libraries I'm working with have poor debugger support.
 - The types from the standard library I'm working with have poor debugger support.
 - The language features I'm working with have poor debugger support.
