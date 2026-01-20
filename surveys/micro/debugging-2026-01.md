@@ -50,6 +50,7 @@ Tools:
 - WinDbg
 - [Visual Studio](https://visualstudio.microsoft.com/)
 - Print Debugging (`println!`, `eprintln!`, `print!`, `eprint!`)
+- Special embedded debugger
 - The `dbg!` macro
 - Other CLI tool
 - Other IDE/Extension
