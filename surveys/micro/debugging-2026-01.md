@@ -91,6 +91,9 @@ Type: select all that apply
 
 ### What standard library types are hard to work with when debugging?
 
+For example, this could include things like smart pointers or heavily nested
+data structures.
+
 Type: free text
 
 > Ideally, encourage people to use fully qualified paths in their answer where
