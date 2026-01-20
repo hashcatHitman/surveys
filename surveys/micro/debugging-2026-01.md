@@ -32,8 +32,8 @@ Tools:
 - WinDbg
 - [Visual Studio](https://visualstudio.microsoft.com/)
 - Print Debugging (`println!`, `eprintln!`, `print!`, `eprint!`)
-- `dbg!`
-- Other CLI
+- The `dbg!` macro
+- Other CLI tool
 - Other IDE/Extension
 
 <!-- TODO: Should we list <https://github.com/metacraft-labs/codetracer>? -->
