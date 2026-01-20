@@ -104,17 +104,16 @@ Type: free text
 
 ### If you are a library author, are you aware of and using the debugger visualizer attribute?
 
+This attribute allows you to provide specialized visualizers for your custom
+types. You can find more information about it in
+[The Rust Reference: Debugger Attributes](https://doc.rust-lang.org/reference/attributes/debugger.html).
+
 Type: select one
 
 - I am not a library author. [`NEXT`](#if-you-could-use-rustup-to-receive-updates-to-the-debugging-experience-decoupled-from-the-toolchain-would-you-specifically-updates-to-the-visualizer-scripts)
 - I was not aware! [`NEXT`](#if-you-could-use-rustup-to-receive-updates-to-the-debugging-experience-decoupled-from-the-toolchain-would-you-specifically-updates-to-the-visualizer-scripts)
 - I was aware, and already use it. [`NEXT`](#if-you-could-use-rustup-to-receive-updates-to-the-debugging-experience-decoupled-from-the-toolchain-would-you-specifically-updates-to-the-visualizer-scripts)
 - I was aware, and do not use it.
-
-> Link to the reference: <https://doc.rust-lang.org/reference/attributes/debugger.html>
-> Link to the RFC: <https://rust-lang.github.io/rfcs/3191-debugger-visualizer.html>
-> Should probably include one or both of these so people know what we're talking
-> about.
 
 ### Why don't you use the debugger visualizer attribute?
 
