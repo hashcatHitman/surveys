@@ -133,10 +133,6 @@ Type: select one
 
 ## Personal feedback
 
-### What are your biggest complaints or blockers for using debuggers in your Rust projects?
-
-Type: free text (optional)
-
-### Is there anything else you would like <!--TODO: Who? t-compiler? --> to know?
+### Is there anything else you would like to tell us about debugging support in Rust?
 
 Type: free text (optional)
