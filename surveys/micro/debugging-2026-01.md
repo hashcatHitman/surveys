@@ -126,9 +126,9 @@ types. You can find more information about it in
 
 Type: select one
 
-- I am not a library author. [`NEXT`](#if-you-could-use-rustup-to-receive-updates-to-the-debugging-experience-decoupled-from-the-toolchain-would-you-specifically-updates-to-the-visualizer-scripts)
-- I was not aware! [`NEXT`](#if-you-could-use-rustup-to-receive-updates-to-the-debugging-experience-decoupled-from-the-toolchain-would-you-specifically-updates-to-the-visualizer-scripts)
-- I was aware, and already use it. [`NEXT`](#if-you-could-use-rustup-to-receive-updates-to-the-debugging-experience-decoupled-from-the-toolchain-would-you-specifically-updates-to-the-visualizer-scripts)
+- I am not a library author. [`NEXT`](#is-there-anything-else-you-would-like-to-tell-us-about-debugging-support-in-rust)
+- I was not aware! [`NEXT`](#is-there-anything-else-you-would-like-to-tell-us-about-debugging-support-in-rust)
+- I was aware, and already use it. [`NEXT`](#is-there-anything-else-you-would-like-to-tell-us-about-debugging-support-in-rust)
 - I was aware, and do not use it.
 
 ### Why don't you use the debugger visualizer attribute?
@@ -139,13 +139,6 @@ Type: select all that apply
 - My debugger is not supported.
 - My libraries' types do not need them.
 - Other (open response)
-
-### If you could use `rustup` to receive updates to the debugging experience decoupled from the toolchain, would you? (specifically, updates to the visualizer scripts)
-
-Type: select one
-
-- Yes
-- No
 
 ## Personal feedback
 
