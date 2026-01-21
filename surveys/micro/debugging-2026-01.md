@@ -24,6 +24,19 @@ Type: select one
 
 ## Your use of debuggers in Rust
 
+### Do you use debuggers in Rust?
+
+Type: select one
+
+- Yes
+- I use debuggers in other programming languages, but not Rust [`NEXT`](#is-there-anything-else-you-would-like-to-tell-us-about-debugging-support-in-rust)
+- I don't use debuggers at all [`NEXT`](#is-there-anything-else-you-would-like-to-tell-us-about-debugging-support-in-rust)
+
+<!-- TODO: Where should "I use debuggers in other programming languages, but not
+Rust" actually link to? Does it need it's own question about why not, or can we
+make the existing questions work for that purpose? Or is it best to just leave
+it linking to the final question? -->
+
 ### What tools do you use to debug Rust programs on which operating systems?
 
 To clarify: the "operating system" being asked for is the one on the machine you
