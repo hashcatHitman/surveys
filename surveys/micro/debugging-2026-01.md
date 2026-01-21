@@ -55,12 +55,9 @@ Tools:
 - Other CLI tool
 - Other IDE/Extension
 
-<!-- TODO: Should we list <https://github.com/metacraft-labs/codetracer>? -->
-<!-- TODO: Should we list <https://github.com/kellpossible/stack-debug>? -->
-<!-- TODO: Should we list <https://github.com/SeaQL/FireDBG.for.Rust>? -->
-<!-- TODO: Should we list debuggers specific to a particular target platform?
-(i.e. iOS-specific debugger when developing for iOS) -->
-<!-- TODO: Should we switch to a free-form response for "Other" instead? -->
+### What other debuggers do you use?
+
+Type: free text (optional)
 
 ### What are you using debuggers for?
 
