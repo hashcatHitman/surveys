@@ -86,7 +86,7 @@ Type: select all that apply
 
 ## Difficulties using debuggers in Rust
 
-### What are some of your struggles with debugging Rust?
+### When you don't use a debugger, why don't you?
 
 Type: select all that apply
 
