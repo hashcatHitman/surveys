@@ -10,32 +10,44 @@ they face, and what can be done to improve the experience.
 
 Type: select one
 
-- Yes, I use Rust [`NEXT`](#what-tools-do-you-use-to-debug-rust-programs-on-which-operating-systems)
-- No, I don't currently use Rust, but I have in the past [`NEXT`](#were-issues-with-debugging-support-the-primary-reason-why-you-stopped-using-rust)
-- No, I have never used Rust [`NEXT`](#is-there-anything-else-you-would-like-to-tell-us-about-debugging-support-in-rust)
-
-### Were issues with debugging support the primary reason why you stopped using Rust?
-
-Type: select one
-
-- Yes
-- No, but they were one of the reasons why I stopped using Rust
-- No [`NEXT`](#is-there-anything-else-you-would-like-to-tell-us-about-debugging-support-in-rust)
-
-## Your use of debuggers in Rust
+- Yes, I use Rust [`NEXT`](#do-you-use-debuggers-in-rust)
+- No, I don't currently use Rust, but I have in the past [`NEXT`](#did-you-use-debuggers-in-rust)
+- No, I have never used Rust [`NEXT`](#do-you-use-debuggers-in-other-programming-languages)
 
 ### Do you use debuggers in Rust?
 
 Type: select one
 
-- Yes
-- I use debuggers in other programming languages, but not Rust [`NEXT`](#is-there-anything-else-you-would-like-to-tell-us-about-debugging-support-in-rust)
-- I don't use debuggers at all [`NEXT`](#is-there-anything-else-you-would-like-to-tell-us-about-debugging-support-in-rust)
+- Yes [`NEXT`](#what-tools-do-you-use-to-debug-rust-programs-on-which-operating-systems)
+- No, I don't currently use debuggers in Rust, but I have in the past [`NEXT`](#what-tools-do-you-use-to-debug-rust-programs-on-which-operating-systems)
+- No, I have never used debuggers in Rust, but I currently use debuggers in
+other programming languages [`NEXT`](#do-you-use-debuggers-in-other-programming-languages)
 
-<!-- TODO: Where should "I use debuggers in other programming languages, but not
-Rust" actually link to? Does it need it's own question about why not, or can we
-make the existing questions work for that purpose? Or is it best to just leave
-it linking to the final question? -->
+### Did you use debuggers in Rust?
+
+Type: select one
+
+- Yes, in the past [`NEXT`](#were-issues-with-debugging-support-the-primary-reason-why-you-stopped-using-rust)
+- No, never [`NEXT`](#do-you-use-debuggers-in-other-programming-languages)
+
+### Were issues with debugging support the primary reason why you stopped using Rust?
+
+Type: select one
+
+- Yes [`NEXT`](#what-tools-do-you-use-to-debug-rust-programs-on-which-operating-systems)
+- No, but they were one of the reasons why I stopped using Rust [`NEXT`](#what-tools-do-you-use-to-debug-rust-programs-on-which-operating-systems)
+- No [`NEXT`](#is-there-anything-else-you-would-like-to-tell-us-about-debugging-support-in-rust)
+
+### Do you use debuggers in other programming languages?
+
+Type: select one
+
+- Yes [`NEXT`](#is-there-anything-else-you-would-like-to-tell-us-about-debugging-support-in-rust)
+- No, I don't currently use debuggers in other programming languages, but I have
+in the past [`NEXT`](#is-there-anything-else-you-would-like-to-tell-us-about-debugging-support-in-rust)
+- No, I have never used debuggers in other programming languages [`NEXT`](#is-there-anything-else-you-would-like-to-tell-us-about-debugging-support-in-rust)
+
+## Your use of debuggers in Rust
 
 ### What tools do you use to debug Rust programs on which operating systems?
 
