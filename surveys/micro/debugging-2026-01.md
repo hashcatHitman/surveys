@@ -52,7 +52,9 @@ in the past [`NEXT`](#is-there-anything-else-you-would-like-to-tell-us-about-deb
 ### What tools do you use to debug Rust programs on which operating systems?
 
 To clarify: the "operating system" being asked for is the one on the machine you
-write your code using, not the one your code runs on.
+write your code using, not the one your code runs on. If you don't see the
+debugger you use listed, you'll have an opportunity to tell us about it in the
+next question.
 
 Type: matrix (select all that apply)
 
@@ -77,8 +79,7 @@ Tools:
 - Print Debugging (`println!`, `eprintln!`, `print!`, `eprint!`)
 - Special embedded debugger
 - The `dbg!` macro
-- Other CLI tool
-- Other IDE/Extension
+- I don't know, I just hit "Debug" in my IDE
 
 ### What other debuggers do you use?
 
