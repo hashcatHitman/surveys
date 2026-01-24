@@ -1,7 +1,43 @@
+//! Converts SurveyHero markdown files to text files
+//! with SurveyHero's text format
+//!
+//! NOTE: This is meant to be used to bootstrap
+//! a survey; it is not meant to be a full solution
+use crate::markdown::Question;
+use anyhow::Result;
 use std::io::Write;
+use std::{
+    io::Read,
+    path::{Path, PathBuf},
+};
 
-use color_eyre::eyre::Result;
-use surveyhero::markdown::Question;
+pub struct S2S<'a> {
+    source: &'a Path,
+    dist: PathBuf,
+}
+
+impl<'a> S2S<'a> {
+    pub fn new(source: &'a Path, dist: PathBuf) -> Self {
+        Self { source, dist }
+    }
+
+    pub fn run(&self) -> Result<()> {
+        let mut file = std::fs::File::open(self.source)?;
+        let mut contents = String::new();
+        assert!(self.dist.is_dir());
+        assert!(self.source.is_file());
+        file.read_to_string(&mut contents)?;
+
+        let questions = crate::markdown::parse(&contents)?;
+        let dist_file = self
+            .dist
+            .join(self.source.with_extension(".txt").file_name().unwrap());
+        let mut dist_file = std::fs::File::create(dist_file)?;
+        write_questions(&questions, &mut dist_file)?;
+
+        Ok(())
+    }
+}
 
 pub fn write_questions(questions: &[Question<'_>], out: &mut impl Write) -> Result<()> {
     for q in questions {
@@ -19,7 +55,7 @@ pub fn write_questions(questions: &[Question<'_>], out: &mut impl Write) -> Resu
 /// No control flow
 /// Doesn't handle optionality (due to lack of support in the `surveyhero` crate)
 fn write_question(q: &Question<'_>, out: &mut impl Write) -> Result<()> {
-    use surveyhero::markdown::Answers::*;
+    use crate::markdown::Answers::*;
     write!(out, "{}", q.text)?;
     if !matches!(
         &q.answers,

@@ -3,7 +3,6 @@ import sys
 import subprocess
 import os
 from pathlib import Path
-from typing import Optional
 
 
 def main():
@@ -11,7 +10,7 @@ def main():
     try:
         s2s_path = Path(os.environ["S2S_PATH"])
     except KeyError:
-        s2s_path = Path(__file__).parent / "sh_txt"
+        s2s_path = Path(__file__).parent / "surveyhero/"
 
     if not s2s_path.exists():
         print(f"s2s_path={s2s_path} does not exist")
@@ -33,7 +32,7 @@ def main():
 
     subprocess.run(
         [
-            str(s2s_path / "target" / "debug" / "sh_txt"),
+            str(s2s_path / "target" / "debug" / "scaffold"),
         ]
         + sys.argv[1:]
     )

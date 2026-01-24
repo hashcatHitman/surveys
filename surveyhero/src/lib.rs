@@ -2,6 +2,7 @@ pub mod api;
 pub mod cli;
 pub mod markdown;
 pub mod render;
+pub mod txt_writer;
 
 use crate::{api::Question, cli::SharedArgs, markdown::Answers};
 impl markdown::Question<'_> {
