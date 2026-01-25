@@ -1,5 +1,6 @@
 //! Converts SurveyHero markdown files to text files
 //! with SurveyHero's text format
+//! They can be then imported to SurveyHero directly, see https://help.surveyhero.com/manual/create-survey/how-to-copy-and-paste-questions-import-questions.
 //!
 //! NOTE: This is meant to be used to bootstrap
 //! a survey; it is not meant to be a full solution
