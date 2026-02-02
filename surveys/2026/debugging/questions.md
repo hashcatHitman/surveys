@@ -107,6 +107,22 @@ Type: select all that apply
 
 <!-- TODO: Can we list more uses? Should we? -->
 
+### Which programming language(s) do you debug across (with Rust)?
+
+Type: select all that apply (optional)
+
+- C
+- C#
+- C++
+- Go
+- Java
+- JavaScript
+- Kotlin
+- Python
+- Swift
+- Zig
+- Other (open response)
+
 ## Difficulties using debuggers in Rust
 
 ### When you don't use a debugger, why don't you?
