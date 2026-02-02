@@ -6,13 +6,23 @@ they face, and what can be done to improve the experience.
 
 ## Cohort Questions
 
-### Do you use Rust?
+### How would you rate your Rust expertise?
+
+Even if you no longer use Rust, we'd like to know.
+
+Type: select one
+
+- I have never used Rust [`NEXT`](#do-you-use-debuggers-in-other-programming-languages)
+- Beginner
+- Intermediate
+- Advanced
+
+### Do you currently use Rust?
 
 Type: select one
 
 - Yes, I use Rust [`NEXT`](#do-you-use-debuggers-in-rust)
 - No, I don't currently use Rust, but I have in the past [`NEXT`](#did-you-use-debuggers-in-rust)
-- No, I have never used Rust [`NEXT`](#do-you-use-debuggers-in-other-programming-languages)
 
 ### Do you use debuggers in Rust?
 
