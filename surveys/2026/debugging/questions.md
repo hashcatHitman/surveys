@@ -178,9 +178,9 @@ types. You can find more information about it in
 
 Type: select one
 
-- I am not a library author. [`NEXT`](#is-there-anything-else-you-would-like-to-tell-us-about-debugging-support-in-rust)
-- I was not aware! [`NEXT`](#is-there-anything-else-you-would-like-to-tell-us-about-debugging-support-in-rust)
-- I was aware, and already use it. [`NEXT`](#is-there-anything-else-you-would-like-to-tell-us-about-debugging-support-in-rust)
+- I am not a library author. [`NEXT`](#which-of-these-pain-points-have-you-experienced-using-a-debugger-with-rust)
+- I was not aware! [`NEXT`](#which-of-these-pain-points-have-you-experienced-using-a-debugger-with-rust)
+- I was aware, and already use it. [`NEXT`](#which-of-these-pain-points-have-you-experienced-using-a-debugger-with-rust)
 - I was aware, and do not use it.
 
 ### Why don't you use the debugger visualizer attribute?
@@ -191,6 +191,24 @@ Type: select all that apply
 - My debugger is not supported.
 - My libraries' types do not need them.
 - Other (open response)
+
+### Which of these pain points have you experienced using a debugger with Rust?
+
+Type: select all that apply (optional)
+
+- Cannot print variables (i.e. optimized-out code)
+- Conditional breakpoints don't trigger
+- Current line number jumps around unexpectedly
+- Difficult to trace dataflow
+- Don't have a source view of the current line being run
+- Expression parser doesn't support expressions that you want to write
+- Incorrect information displayed (i.e. line numbers, variable values)
+- Often step too many times and need to restart from scratch
+- Too much detail/irrelevant information (i.e. assembly views)
+- Unintuitive interface/errors
+- Sub-optimal representations of values (e.g. `Vec<T>` is shown as a pointer,
+length and capacity rather than the elements)
+- Cannot determine the actual type of trait objects
 
 ## Personal feedback
 
