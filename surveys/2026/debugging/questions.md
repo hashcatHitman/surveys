@@ -30,8 +30,7 @@ Type: select one
 
 - Yes [`NEXT`](#what-tools-do-you-use-to-debug-rust-programs-on-which-operating-systems)
 - No, I don't currently use debuggers in Rust, but I have in the past [`NEXT`](#what-tools-do-you-use-to-debug-rust-programs-on-which-operating-systems)
-- No, I have never used debuggers in Rust, but I currently use debuggers in
-other programming languages [`NEXT`](#do-you-use-debuggers-in-other-programming-languages)
+- No, I have never used debuggers in Rust, but I currently use debuggers in other programming languages [`NEXT`](#do-you-use-debuggers-in-other-programming-languages)
 
 ### Did you use debuggers in Rust?
 
@@ -53,8 +52,7 @@ Type: select one
 Type: select one
 
 - Yes [`NEXT`](#is-there-anything-else-you-would-like-to-tell-us-about-debugging-support-in-rust)
-- No, I don't currently use debuggers in other programming languages, but I have
-in the past [`NEXT`](#is-there-anything-else-you-would-like-to-tell-us-about-debugging-support-in-rust)
+- No, I don't currently use debuggers in other programming languages, but I have in the past [`NEXT`](#is-there-anything-else-you-would-like-to-tell-us-about-debugging-support-in-rust)
 - No, I have never used debuggers in other programming languages [`NEXT`](#is-there-anything-else-you-would-like-to-tell-us-about-debugging-support-in-rust)
 
 ## Your use of debuggers in Rust
@@ -206,8 +204,7 @@ Type: select all that apply (optional)
 - Often step too many times and need to restart from scratch
 - Too much detail/irrelevant information (i.e. assembly views)
 - Unintuitive interface/errors
-- Sub-optimal representations of values (e.g. `Vec<T>` is shown as a pointer,
-length and capacity rather than the elements)
+- Sub-optimal representations of values (e.g. `Vec<T>` is shown as a pointer, length and capacity rather than the elements)
 - Cannot determine the actual type of trait objects
 
 ## Personal feedback
