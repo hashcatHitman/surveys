@@ -107,7 +107,7 @@ Type: select all that apply
 
 <!-- TODO: Can we list more uses? Should we? -->
 
-### Which programming language(s) do you debug across (with Rust)?
+### Do you debug programs that combine Rust with any of the following languages?
 
 Type: select all that apply (optional)
 
