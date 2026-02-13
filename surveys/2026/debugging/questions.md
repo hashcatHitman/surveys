@@ -158,15 +158,10 @@ Type: select all that apply
 ### What standard library types are hard to work with when debugging?
 
 For example, this could include things like smart pointers or heavily nested
-data structures.
+data structures. It is preferred that your answer use fully qualified paths
+(e.g., "std::boxed::Box").
 
 Type: free form
-
-> Ideally, encourage people to use fully qualified paths in their answer where
-> possible. For example, I might find it really awful trying to use a debugger
-> with `std::boxed::Box`. I'd like to avoid ambiguity here, but I also don't
-> think anyone would think it's a great idea to make a huge checklist of types
-> from the standard library.
 
 ### If you are a library author, are you aware of and using the debugger visualizer attribute?
 
