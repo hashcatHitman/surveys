@@ -103,8 +103,6 @@ Type: select all that apply
 - Curiosity/learning
 - Other (open response)
 
-<!-- TODO: Can we list more uses? Should we? -->
-
 ### Do you debug programs that combine Rust with any of the following languages?
 
 Type: select all that apply (optional)
