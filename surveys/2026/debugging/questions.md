@@ -91,7 +91,7 @@ Tools:
 
 ### What other debuggers do you use?
 
-Type: free text (optional)
+Type: free form (optional)
 
 ### What are you using debuggers for?
 
@@ -160,7 +160,7 @@ Type: select all that apply
 For example, this could include things like smart pointers or heavily nested
 data structures.
 
-Type: free text
+Type: free form
 
 > Ideally, encourage people to use fully qualified paths in their answer where
 > possible. For example, I might find it really awful trying to use a debugger
@@ -211,4 +211,4 @@ Type: select all that apply (optional)
 
 ### Is there anything else you would like to tell us about debugging support in Rust?
 
-Type: free text (optional)
+Type: free form (optional)
