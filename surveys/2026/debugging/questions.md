@@ -30,7 +30,7 @@ Type: select one
 
 - Yes [`NEXT`](#what-tools-do-you-use-to-debug-rust-programs-on-which-operating-systems)
 - No, I don't currently use debuggers in Rust, but I have in the past [`NEXT`](#what-tools-do-you-use-to-debug-rust-programs-on-which-operating-systems)
-- No, I have never used debuggers in Rust, but I currently use debuggers in other programming languages [`NEXT`](#do-you-use-debuggers-in-other-programming-languages)
+- No, I have never used debuggers in Rust [`NEXT`](#do-you-use-debuggers-in-other-programming-languages)
 
 ### Did you use debuggers in Rust?
 
