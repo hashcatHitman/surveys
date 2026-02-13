@@ -161,7 +161,7 @@ For example, this could include things like smart pointers or heavily nested
 data structures. It is preferred that your answer use fully qualified paths
 (e.g., "std::boxed::Box").
 
-Type: free form
+Type: free form (optional)
 
 ### If you are a library author, are you aware of and using the debugger visualizer attribute?
 
