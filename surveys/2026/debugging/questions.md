@@ -1,8 +1,10 @@
 # Survey questions
 
-This is a quick survey about debugging support in Rust. The goal is to
-understand how Rustaceans use debuggers when working with Rust, what pain points
-they face, and what can be done to improve the experience.
+The goal of this survey is to figure out how much do Rust users struggle with debugging Rust code and which debugging workflows are the most relevant for them. We would like to use this data so that we can focus the efforts of Rust compiler contributors on the areas of debugging that matter the most to our users.
+
+Your feedback is much appreciated!
+
+This survey is fully anonymous. The Rust survey team will go through the answers and release a summary on the Rust blog after the survey is complete.
 
 ## Cohort Questions
 
@@ -57,45 +59,41 @@ Type: select one
 
 ## Your use of debuggers in Rust
 
-### What tools do you use to debug Rust programs on which operating systems?
+### What tools and workflows do you use to debug Rust programs on which operating systems?
 
-To clarify: the "operating system" being asked for is the one on the machine you
-write your code using, not the one your code runs on. If you don't see the
-debugger you use listed, you'll have an opportunity to tell us about it in the
-next question.
+To clarify: the "operating system" we ask for is the one on which you develop Rust code, not the one your code runs on. If you don't see the debugging use-case you use listed below, you'll have an opportunity to tell us about it in the next question.
 
 Type: matrix (select all that apply)
 
-Your Operating System:
+Tools and workflows:
+
+- Print debugging (e.g. *println!*)
+- The *dbg!* macro
+- gdb (CLI)
+- gdb (in IDE)
+- lldb (CLI)
+- lldb (in IDE)
+- [BugStalker](https://github.com/godzie44/BugStalker)
+- WinDbg
+- [Visual Studio](https://visualstudio.microsoft.com/) debugger
+- Special embedded debugger
+- I don't know, I just hit "Debug" in my IDE
+
+Your operating system:
 
 - Linux
-- Windows 10/11
-- Windows 8.1 or older
+- Windows
 - Windows Subsystem for Linux
 - macOS
 - Other
 
-Tools:
-
-- gdb (CLI)
-- gdb (IDE/Extension)
-- lldb (CLI)
-- lldb (IDE/Extension)
-- [BugStalker](https://github.com/godzie44/BugStalker)
-- WinDbg
-- [Visual Studio](https://visualstudio.microsoft.com/)
-- Print Debugging (`println!`, `eprintln!`, `print!`, `eprint!`)
-- Special embedded debugger
-- The `dbg!` macro
-- I don't know, I just hit "Debug" in my IDE
-
-### What other debuggers do you use?
+### What other debuggers or workflows do you use?
 
 Type: free form (optional)
 
 ### What are you using debuggers for?
 
-Type: select all that apply
+Type: select all that apply (optional)
 
 - Getting stack traces from hung/crashed processes
 - Line-by-line stepping
@@ -121,9 +119,9 @@ Type: select all that apply (optional)
 
 ## Difficulties using debuggers in Rust
 
-### When you don't use a debugger, why don't you?
+### When you DON'T use a debugger, why don't you?
 
-Type: select all that apply
+Type: select all that apply (optional)
 
 - I don't need to debug because my code works.
 - I don't know how to use debuggers.
@@ -143,13 +141,14 @@ Type: select one
 
 ### When do you experience issues with trying to step through code with your debugger?
 
-Type: select all that apply
+Type: select all that apply (optional)
 
 - When iterators are involved
 - When closures are involved
 - When macros are involved
 - When panics are involved
 - When trait objects are involved
+- When async code/futures are involved
 - When function pointers are involved
 - Other (open response)
 
@@ -167,7 +166,7 @@ This attribute allows you to provide specialized visualizers for your custom
 types. You can find more information about it in
 [The Rust Reference: Debugger Attributes](https://doc.rust-lang.org/reference/attributes/debugger.html).
 
-Type: select one
+Type: select one (optional)
 
 - I am not a library author. [`NEXT`](#which-of-these-pain-points-have-you-experienced-using-a-debugger-with-rust)
 - I was not aware! [`NEXT`](#which-of-these-pain-points-have-you-experienced-using-a-debugger-with-rust)
@@ -176,11 +175,12 @@ Type: select one
 
 ### Why don't you use the debugger visualizer attribute?
 
-Type: select all that apply
+Type: select all that apply (optional)
 
-- I do not know how to write visualizer scripts.
+- I don't know how to write visualizer scripts.
 - My debugger is not supported.
 - My libraries' types do not need them.
+- I don't have time to maintain visualizer attributes.
 - Other (open response)
 
 ### Which of these pain points have you experienced using a debugger with Rust?
@@ -189,15 +189,15 @@ Type: select all that apply (optional)
 
 - Cannot print variables (i.e. optimized-out code)
 - Conditional breakpoints don't trigger
+- Suboptimal representations of values (e.g. *Vec<T>* is shown as a pointer, length and capacity rather than the elements)
 - Current line number jumps around unexpectedly
-- Difficult to trace dataflow
+- Difficult to trace execution control flow
 - Don't have a source view of the current line being run
 - Expression parser doesn't support expressions that you want to write
 - Incorrect information displayed (i.e. line numbers, variable values)
 - Often step too many times and need to restart from scratch
 - Too much detail/irrelevant information (i.e. assembly views)
 - Unintuitive interface/errors
-- Sub-optimal representations of values (e.g. `Vec<T>` is shown as a pointer, length and capacity rather than the elements)
 - Cannot determine the actual type of trait objects
 
 ## Personal feedback
