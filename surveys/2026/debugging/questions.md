@@ -30,9 +30,9 @@ Type: select one
 
 Type: select one
 
-- Yes [`NEXT`](#what-tools-do-you-use-to-debug-rust-programs-on-which-operating-systems)
-- No, I don't currently use debuggers in Rust, but I have in the past [`NEXT`](#what-tools-do-you-use-to-debug-rust-programs-on-which-operating-systems)
-- No, I have never used debuggers in Rust [`NEXT`](#do-you-use-debuggers-in-other-programming-languages)
+- Yes [`NEXT`](#what-tools-and-workflows-do-you-use-to-debug-rust-programs-on-which-operating-systems)
+- No, I don't currently use debuggers in Rust, but I have in the past [`NEXT`](#what-tools-and-workflows-do-you-use-to-debug-rust-programs-on-which-operating-systems)
+- No, I have never used debuggers in Rust [`NEXT`](#what-tools-and-workflows-do-you-use-to-debug-rust-programs-on-which-operating-systems)
 
 ### Did you use debuggers in Rust?
 
@@ -45,8 +45,8 @@ Type: select one
 
 Type: select one
 
-- Yes [`NEXT`](#what-tools-do-you-use-to-debug-rust-programs-on-which-operating-systems)
-- No, but they were one of the reasons why I stopped using Rust [`NEXT`](#what-tools-do-you-use-to-debug-rust-programs-on-which-operating-systems)
+- Yes [`NEXT`](#what-tools-and-workflows-do-you-use-to-debug-rust-programs-on-which-operating-systems)
+- No, but they were one of the reasons why I stopped using Rust [`NEXT`](#what-tools-and-workflows-do-you-use-to-debug-rust-programs-on-which-operating-systems)
 - No [`NEXT`](#is-there-anything-else-you-would-like-to-tell-us-about-debugging-support-in-rust)
 
 ### Do you use debuggers in other programming languages?
