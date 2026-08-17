@@ -7,6 +7,11 @@ import numpy as np
 import pandas as pd
 from plotly.graph_objs import Figure
 
+CURRENT_DIR = Path(__file__).absolute().parent
+"""
+This should resolve to the path of the directory containing this script.
+"""
+
 ROOT_DIR = Path(__file__).absolute().parent.parent.parent.parent.parent
 """
 This should resolve to the path of the surveys repository as a whole.
@@ -42,9 +47,7 @@ try:
         parse_surveyhero_answers,
         parse_surveyhero_summary,
     )
-    from report.surveyhero.render import (
-        render_report_to_pdf,
-    )
+    from report.surveyhero.render import render_blog_post, render_report_to_pdf
     from report.surveyhero.report import ChartReport
     from report.surveyhero.survey import (
         Answer,
@@ -65,6 +68,7 @@ except ModuleNotFoundError:
         parse_surveyhero_summary,
     )
     from surveyhero.render import (  # ty:ignore[unresolved-import]
+        render_blog_post,
         render_report_to_pdf,
     )
     from surveyhero.report import ChartReport  # ty:ignore[unresolved-import]
@@ -614,4 +618,14 @@ if __name__ == "__main__":
         Path(__file__).parent / "debugging-survey-2026-report.pdf",
         "Rust Debugging survey 2026 report",
         include_labels=True,
+    )
+
+    blog_dir = ROOT_DIR.parent / "blog.rust-lang.org"
+    blog_post_rel_path = Path("content/rust-debugging-survey-2026-results")
+    template_path = Path(CURRENT_DIR / "blog.md")
+    render_blog_post(
+        template=template_path,
+        blog_dir=blog_dir,
+        blog_post_rel_path=blog_post_rel_path,
+        report=report,
     )
