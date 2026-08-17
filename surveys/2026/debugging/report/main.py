@@ -470,7 +470,7 @@ def analyze() -> ChartReport:
     )
 
     report.add_bar_chart(
-        "do-you-debug-programs-that-combine-rust-with-any-of-the-following-languages-",
+        "do-you-debug-programs-that-combine-rust-with-any-of-the-following-languages",
         multilingual_q.add_open(
             multilingual_open, "assembly", "Assembly"
         ).with_title(lambda t: "If you do, with which languages?"),
