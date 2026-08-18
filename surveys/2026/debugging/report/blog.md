@@ -68,19 +68,20 @@ IDE was the most popular choice, followed by `gdb` on the command line:
 
 <!-- chart: what-tools-and-workflows-do-you-use-to-debug-rust-programs -->
 
-Including the operating system as part of the response, we can get a more
-detailed breakdown of these results from two different angles. The first angle
-being, "On operating system X, what percent of responses are using debugger
-Y?". Print debugging and the `dbg!` macro are consistently the top two yet
-again, but looking beyond that, things get more interesting. On Linux, using
-`gdb` on the command line was the most popular choice by a thin margin, but on
-Windows, Windows Subsystem for Linux (WSL), and macOS, `lldb` in an IDE was the
-top pick with a much wider lead over the respective runner-up for each compared
-to Linux (which had `lldb` in an IDE as the runner-up). On Windows, the three
-least popular choices were the command line debuggers (`gdb` CLI, `lldb` CLI,
-and BugStalker), and on both Windows and macOS the third most popular pick was,
-"I don't know". Those who were debugging on operating systems not listed (Other)
-most frequently used some kind of special embedded debugger or `gdb`:
+We can get a more detailed breakdown of these results if we include the
+operating system on which the respondents use a given debugging approach. We
+examine this from two different angles. The first angle being, "On operating
+system X, what percent of responses are using debugger Y?". Print debugging and
+the `dbg!` macro are consistently the top two yet again, but looking beyond
+that, things get more interesting. On Linux, using `gdb` on the command line was
+the most popular choice by a thin margin, but on Windows, Windows Subsystem for
+Linux (WSL), and macOS, `lldb` in an IDE was the top pick with a much wider lead
+over the respective runner-up for each compared to Linux (which had `lldb` in an
+IDE as the runner-up). On Windows, the three least popular choices were the
+command line debuggers (`gdb` CLI, `lldb` CLI, and BugStalker), and on both
+Windows and macOS the third most popular pick was, "I don't know". Those who
+were debugging on operating systems not listed (Other) most frequently used some
+kind of special embedded debugger or `gdb`:
 
 <!-- chart: what-tools-and-workflows-do-you-use-to-debug-rust-programs-per-os-1 -->
 
