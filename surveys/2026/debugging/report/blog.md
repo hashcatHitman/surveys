@@ -147,15 +147,11 @@ about 20%:
 
 As stepping through code was anticipated to be one of the most common uses for
 debuggers, we directly asked respondents if they faced any issues when doing so.
-A little over 51% of respondents said they did:
-
-<!-- chart: do-you-experience-any-issues-when-trying-to-step-through-code-with-your-debugger (height=600) -->
-
-Of those who reported that they experienced issues stepping through code, we
-asked when they were experiencing issues. Async code was the most common case
-reported at slightly over 28%, followed by code involving macros at about 23%.
-The least common case reported was code involving function pointers, at almost
-6%:
+A little over 51% of respondents said they did! Of those who reported that they
+experienced issues stepping through code, we asked when they were experiencing
+issues. Async code was the most common case reported at slightly over 28%,
+followed by code involving macros at about 23%. The least common case reported
+was code involving function pointers, at almost 6%:
 
 <!-- chart: when-do-you-experience-issues-with-trying-to-step-through-code-with-your-debugger -->
 
