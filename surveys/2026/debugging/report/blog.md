@@ -39,7 +39,8 @@ split roughly evenly between the two:
 
 We also asked respondents if they currently use or have used debuggers in Rust.
 Over 46% said they currently do, with the remaining responses split between
-"have in the past" and "never have":
+"have in the past" and "never have". That means that over half of respondents do
+not currently use a debugger for Rust!
 
 <!-- chart: do-you-use-debuggers-in-rust (height=600) -->
 
