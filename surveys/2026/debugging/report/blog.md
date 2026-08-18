@@ -111,7 +111,7 @@ processes:
 
 The final bit of insight into how Rustaceans use debuggers is if they are
 debugging programs that use Rust alongside other programming languages. For 44%
-of respondents, the answer is "yes":
+of respondents, the answer is "yes", which is a pretty high number!
 
 <!-- chart: do-you-debug-programs-that-combine-rust-with-other-languages -->
 
