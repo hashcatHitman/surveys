@@ -62,10 +62,9 @@ respondents were active users of Rust):
 
 Knowing what debuggers developers are using and how is another important part of
 understanding the challenges they face. To this end, we asked respondents how
-they were debugging their programs on different operating systems. Independent
-of operating system, most developers make use of print debugging and the `dbg!`
-macro. Excluding those, using `lldb` inside an IDE was the most popular choice,
-followed by `gdb` on the command line:
+they were debugging their programs. Unsurprisingly, most developers make use of
+print debugging and the `dbg!` macro. Excluding those, using `lldb` inside an
+IDE was the most popular choice, followed by `gdb` on the command line:
 
 <!-- chart: what-tools-and-workflows-do-you-use-to-debug-rust-programs -->
 
