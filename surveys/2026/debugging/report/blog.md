@@ -24,7 +24,7 @@ index:
 
 - [Cohort Analysis](#cohort-analysis)
 - [Debugger Usage](#debugger-usage)
-- [Pain Points](#pain-points)
+- [Challenges](#challenges)
 - [Library Authors](#library-authors)
 - [Closing Remarks](#closing-remarks)
 
@@ -120,7 +120,7 @@ followed by C++ at about 43% and Python at about 20%:
 
 <!-- chart: do-you-debug-programs-that-combine-rust-with-any-of-the-following-languages -->
 
-## Pain Points
+## Challenges
 
 Instead of diving right into asking, "what problems do you face when using
 debuggers?", or something to that effect, we first asked respondents why they
