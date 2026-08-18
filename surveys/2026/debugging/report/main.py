@@ -148,7 +148,12 @@ def analyze() -> ChartReport:
             },
             height=450,
         )
-        fig.update_layout(legend=dict(orientation="h"))
+        fig.update_layout(
+            legend=dict(orientation="h"),
+            margin={
+                "l": 75,
+            },
+        )
         return shorten_annotations(fig)
 
     report.add_custom_chart(
