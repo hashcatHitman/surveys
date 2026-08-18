@@ -25,7 +25,7 @@ index:
 - [Cohort Analysis](#cohort-analysis)
 - [Debugger Usage](#debugger-usage)
 - [Challenges](#challenges)
-- [Library Authors](#library-authors)
+- [Debugger Visualizers](#debugger-visualizers)
 - [Closing Remarks](#closing-remarks)
 
 ## Cohort Analysis
@@ -178,7 +178,7 @@ variables at just over 55%:
 
 <!-- chart: which-of-these-pain-points-have-you-experienced-using-a-debugger-with-rust -->
 
-## Library Authors
+## Debugger Visualizers
 
 We asked respondents to indicate if they were library authors, and if so, if
 they were aware of and using the `debugger_visualizer` attribute. Nearly 62% of
