@@ -35,13 +35,13 @@ the survey. We asked respondents to rate their Rust expertise, from "Never used
 it" to "Advanced". Over 80% reported themselves as "Advanced" or "Intermediate",
 split roughly evenly between the two:
 
-<!-- chart: how-would-you-rate-your-rust-expertise -->
+<!-- chart: how-would-you-rate-your-rust-expertise (height=600) -->
 
 We also asked respondents if they currently use or have used debuggers in Rust.
 Over 46% said they currently do, with the remaining responses split between
 "have in the past" and "never have":
 
-<!-- chart: do-you-use-debuggers-in-rust -->
+<!-- chart: do-you-use-debuggers-in-rust (height=600) -->
 
 Categorized by expertise, the responses reveal that roughly half of "beginners"
 have never used debuggers in Rust, and nearly half of "advanced users" currently
@@ -55,7 +55,7 @@ we asked if challenges with debugging support were why they stopped. For nearly
 being partially responsible (though mind the small response count; most
 respondents were active users of Rust):
 
-<!-- chart: were-issues-with-debugging-support-the-primary-reason-why-you-stopped-using-rust -->
+<!-- chart: were-issues-with-debugging-support-the-primary-reason-why-you-stopped-using-rust (height=600) -->
 
 ## Debugger Usage
 
@@ -148,7 +148,7 @@ As stepping through code was anticipated to be one of the most common uses for
 debuggers, we directly asked respondents if they faced any issues when doing so.
 A little over 51% of respondents said they did:
 
-<!-- chart: do-you-experience-any-issues-when-trying-to-step-through-code-with-your-debugger -->
+<!-- chart: do-you-experience-any-issues-when-trying-to-step-through-code-with-your-debugger (height=600) -->
 
 Of those who reported that they experienced issues stepping through code, we
 asked when they were experiencing issues. Async code was the most common case
@@ -186,7 +186,7 @@ attribute:
 
 <!-- TODO: Fix this chart in the script, then consider rewriting this section. -->
 
-<!-- chart: if-you-are-a-library-author-are-you-aware-of-and-using-the-debugger-visualizer-attribute -->
+<!-- chart: if-you-are-a-library-author-are-you-aware-of-and-using-the-debugger-visualizer-attribute (height=600) -->
 
 For those who indicated that they were library authors who knew about the
 attribute but did not use it, we also asked why. This represented a much smaller
