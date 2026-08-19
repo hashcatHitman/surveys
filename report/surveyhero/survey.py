@@ -244,8 +244,11 @@ class SurveyFullAnswers:
 
     def q_simple_single(self, question_or_id: int | str,
                         treat_unknown_answers_as: Optional[str] = "Other") -> Question:
+        from .parser import normalize_answer
+
         col = self.get_column(question_or_id)
         response_count = np.sum(col.data.count())
+        col.data = col.data.map(normalize_answer, na_action="ignore")
 
         ref_question = self.get_summary_question(col.name)
         if ref_question is not None:
