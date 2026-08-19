@@ -95,6 +95,8 @@ line:
 
 <!-- chart: what-tools-and-workflows-do-you-use-to-debug-rust-programs-per-os-2 -->
 
+To the 6 respondents who use WinDbg on Linux: we wish you luck!
+
 As for how people actually use their debugger of choice, the aggregate results
 are not particularly surprising. Roughly 87% of users are using debuggers for
 stepping line-by-line through programs and a little over half of users are using
