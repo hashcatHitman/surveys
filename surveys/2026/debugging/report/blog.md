@@ -100,7 +100,10 @@ To the 6 respondents who use WinDbg on Linux: we wish you luck!
 As for how people actually use their debugger of choice, the aggregate results
 are not particularly surprising. Roughly 87% of users are using debuggers for
 stepping line-by-line through programs and a little over half of users are using
-debuggers to obtain stack traces from hung/crashed processes:
+debuggers to obtain stack traces from hung/crashed processes. Only a quarter of
+the respondents use a debugger to debug async code. That might be partially
+caused by the async Rust debugging experience being clumsy and incomplete, or it
+could just be that users aren't writing much async code:
 
 <!-- chart: what-are-you-using-debuggers-for -->
 
