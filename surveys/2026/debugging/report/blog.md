@@ -158,14 +158,10 @@ was code involving function pointers, at almost 6%:
 <!-- chart: when-do-you-experience-issues-with-trying-to-step-through-code-with-your-debugger -->
 
 We also directly asked respondents which types in the standard library were hard
-to work with, if any. This was an open-response question, and as can be seen in
-the wordcloud, a few common complaints were with `enum`s and collections,
-particularly `std::collections::HashMap` and `std::vec::Vec`:
-
-<!-- TODO: This doesn't work! Wordclouds really weren't designed to exist without a
-non-wordcloud chart. -->
-
-`chart: what-standard-library-types-are-hard-to-work-with-when-debugging-wordcloud`
+to work with, if any. This was an open-response question, and reading through
+the responses, some particularly common complaints were with `enum`s and
+collections, particularly `std::collections::HashMap` and `std::vec::Vec`. This
+is also visible in the wordcloud in the full report.
 
 As the survey was being created, we interviewed a few community members and did
 some brainstorming to think of a handful of pain points people might experience
