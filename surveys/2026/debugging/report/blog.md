@@ -130,10 +130,7 @@ followed by C++ at about 43% and Python at about 20%:
 Instead of diving right into asking, "what problems do you face when using
 debuggers?", or something to that effect, we first asked respondents why they
 decide against using debuggers whenever they do, including for reasons that
-aren't necessarily "problems with debuggers". This can help to put the severity
-of any issues into context; if most users report they are blocked by poor
-support for language features and very few report being blocked by "non-issues",
-it'd show the lack of support to be a very significant blocker for users.
+aren't necessarily "problems with debuggers".
 
 The most commonly reported reason was that it was easier or faster to use logs
 or print debugging to solve problems, reported by a little over 81% of
