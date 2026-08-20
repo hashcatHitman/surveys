@@ -23,7 +23,7 @@ If you'd like to skip ahead to any particular section, you can do so with this
 index:
 
 - [Who Uses Debuggers?](#who-uses-debuggers)
-- [Debugger Usage](#debugger-usage)
+- [How Are Debuggers Used?](#how-are-debuggers-used)
 - [Challenges](#challenges)
 - [Debugger Visualizers](#debugger-visualizers)
 - [Closing Remarks](#closing-remarks)
@@ -58,7 +58,7 @@ respondents were active users of Rust):
 
 <!-- chart: were-issues-with-debugging-support-the-primary-reason-why-you-stopped-using-rust (height=600) -->
 
-## Debugger Usage
+## How Are Debuggers Used?
 
 Knowing what debuggers developers are using and how is another important part of
 understanding the challenges they face. To this end, we asked respondents how
