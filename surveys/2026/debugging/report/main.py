@@ -149,7 +149,7 @@ def analyze() -> ChartReport:
             height=450,
         )
         fig.update_layout(
-            legend=dict(orientation="h"),
+            legend={"orientation": "h"},
             margin={
                 "l": 75,
             },
@@ -247,7 +247,7 @@ def analyze() -> ChartReport:
             facet_row_spacing=0.15,
             height=900,
         )
-        fig.update_layout(legend=dict(orientation="h", y=-0.15))
+        fig.update_layout(legend={"orientation": "h", "y": -0.15})
         return shorten_annotations(fig)
 
     report.add_custom_chart(
@@ -272,9 +272,9 @@ def analyze() -> ChartReport:
             height=800,
         )
         fig.update_layout(
-            legend=dict(
-                orientation="h",
-            )
+            legend={
+                "orientation": "h",
+            }
         )
         fig = shorten_annotations(fig)
         for ann in fig["layout"]["annotations"]:
@@ -342,7 +342,7 @@ def analyze() -> ChartReport:
             },
             height=600,
         )
-        fig.update_layout(legend=dict(orientation="h"))
+        fig.update_layout(legend={"orientation": "h"})
         return shorten_annotations(fig)
 
     report.add_custom_chart(
@@ -398,7 +398,7 @@ def analyze() -> ChartReport:
             facet_row_spacing=0.05,
             height=800,
         )
-        fig.update_layout(legend=dict(orientation="h"))
+        fig.update_layout(legend={"orientation": "h"})
         return shorten_annotations(fig)
 
     report.add_custom_chart(
@@ -430,7 +430,7 @@ def analyze() -> ChartReport:
             facet_row_spacing=0.15,
             height=900,
         )
-        fig.update_layout(legend=dict(orientation="h"))
+        fig.update_layout(legend={"orientation": "h"})
         return shorten_annotations(fig)
 
     report.add_custom_chart(
