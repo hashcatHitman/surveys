@@ -290,8 +290,9 @@ def analyze() -> ChartReport:
     other_debuggers = "What other debuggers or workflows do you use?"
     other_debuggers_responses = db.open_answers_raw(other_debuggers)
     with open(OPEN_RESPONSES_DIR / "other-debuggers.txt", "w") as f:
-        for answer in other_debuggers_responses:
-            f.write(f"{answer}\n---\n\n")
+        f.writelines(
+            f"{answer}\n---\n\n" for answer in other_debuggers_responses
+        )
     report.add_wordcloud(
         "what-other-debuggers-or-workflows-do-you-use-wordcloud",
         db.open_answers(other_debuggers),
@@ -440,8 +441,9 @@ def analyze() -> ChartReport:
 
     debugger_used_for_responses = db.open_answers(debugger_use_cases)
     with open(OPEN_RESPONSES_DIR / "debugger-used-for.txt", "w") as f:
-        for answer in debugger_used_for_responses:
-            f.write(f"{answer}\n---\n\n")
+        f.writelines(
+            f"{answer}\n---\n\n" for answer in debugger_used_for_responses
+        )
     report.add_wordcloud(
         "what-are-you-using-debuggers-for-wordcloud",
         db.open_answers(debugger_use_cases),
@@ -483,8 +485,7 @@ def analyze() -> ChartReport:
     )
     multilingual_responses = multilingual_open
     with open(OPEN_RESPONSES_DIR / "multilingual.txt", "w") as f:
-        for answer in multilingual_responses:
-            f.write(f"{answer}\n---\n\n")
+        f.writelines(f"{answer}\n---\n\n" for answer in multilingual_responses)
     report.add_wordcloud(
         "do-you-debug-programs-that-combine-rust-with-any-of-the-following-languages-wordcloud",
         multilingual_open,
@@ -498,8 +499,9 @@ def analyze() -> ChartReport:
     )
     debugger_difficulties_responses = db.open_answers(debugger_difficulties)
     with open(OPEN_RESPONSES_DIR / "debugger-difficulties.txt", "w") as f:
-        for answer in debugger_difficulties_responses:
-            f.write(f"{answer}\n---\n\n")
+        f.writelines(
+            f"{answer}\n---\n\n" for answer in debugger_difficulties_responses
+        )
     report.add_wordcloud(
         "when-you-dont-use-a-debugger-why-dont-you-wordcloud",
         db.open_answers(debugger_difficulties),
@@ -530,8 +532,10 @@ def analyze() -> ChartReport:
         OPEN_RESPONSES_DIR / "step-through-issues-when.txt",
         "w",
     ) as f:
-        for answer in step_through_issues_when_responses:
-            f.write(f"{answer}\n---\n\n")
+        f.writelines(
+            f"{answer}\n---\n\n"
+            for answer in step_through_issues_when_responses
+        )
     report.add_wordcloud(
         "when-do-you-experience-issues-with-trying-to-step-through-code-with-your-debugger-wordcloud",
         db.open_answers(step_through_issues_when),
@@ -546,8 +550,7 @@ def analyze() -> ChartReport:
     )
     std_lib_pain_responses = db.open_answers_raw(std_lib_pain)
     with open(OPEN_RESPONSES_DIR / "std-lib-pain.txt", "w") as f:
-        for answer in std_lib_pain_responses:
-            f.write(f"{answer}\n---\n\n")
+        f.writelines(f"{answer}\n---\n\n" for answer in std_lib_pain_responses)
     report.add_wordcloud(
         "what-standard-library-types-are-hard-to-work-with-when-debugging-wordcloud",
         db.open_answers(std_lib_pain),
@@ -575,8 +578,10 @@ def analyze() -> ChartReport:
         OPEN_RESPONSES_DIR / "visualizer-attribute-avoided.txt",
         "w",
     ) as f:
-        for answer in visualizer_attribute_avoided_responses:
-            f.write(f"{answer}\n---\n\n")
+        f.writelines(
+            f"{answer}\n---\n\n"
+            for answer in visualizer_attribute_avoided_responses
+        )
     report.add_wordcloud(
         "why-dont-you-use-the-debugger-visualizer-attribute-wordcloud",
         db.open_answers(visualizer_attribute_avoided),
@@ -598,8 +603,7 @@ def analyze() -> ChartReport:
     final_open_question = "Is there anything else you would like to tell us about debugging support in Rust?"
     final_open = db.open_answers_raw(final_open_question)
     with open(OPEN_RESPONSES_DIR / "final-anything-else.txt", "w") as f:
-        for answer in final_open:
-            f.write(f"{answer}\n---\n\n")
+        f.writelines(f"{answer}\n---\n\n" for answer in final_open)
     # TODO: When making a wordcloud, the report automatically titles it,
     # "Wordcloud of open answers for the previous chart:". In this case, that is
     # just not true. I think a wordcloud can be useful without a parent chart;
