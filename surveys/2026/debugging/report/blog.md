@@ -45,8 +45,8 @@ not currently use a debugger for Rust!
 <!-- chart: do-you-use-debuggers-in-rust (height=600) -->
 
 Categorized by expertise, the responses reveal that roughly half of "beginners"
-have never used debuggers in Rust, and nearly half of "advanced users" currently
-do use debuggers in Rust:
+have never used debuggers in Rust! On the other hand, nearly half of "advanced
+users" currently do use debuggers in Rust:
 
 <!-- chart: do-you-use-debuggers-in-rust-per-expertise -->
 
