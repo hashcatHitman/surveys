@@ -22,13 +22,13 @@ you can also check out [the complete results of the survey][report].
 If you'd like to skip ahead to any particular section, you can do so with this
 index:
 
-- [Cohort Analysis](#cohort-analysis)
+- [Who Uses Debuggers?](#who-uses-debuggers)
 - [Debugger Usage](#debugger-usage)
 - [Challenges](#challenges)
 - [Debugger Visualizers](#debugger-visualizers)
 - [Closing Remarks](#closing-remarks)
 
-## Cohort Analysis
+## Who Uses Debuggers?
 
 The first step to making sense of the survey results is understanding who took
 the survey. We asked respondents to rate their Rust expertise, from "Never used
