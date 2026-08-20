@@ -355,14 +355,14 @@ def analyze() -> ChartReport:
         db.get_column(debugger_use_cases), None
     )
     use_case_keys = use_case_answer_cols.keys()
-    for debugger in debugger_used_on_any_os.keys():
+    for debugger in debugger_used_on_any_os:
         use_case_answer_cols[debugger] = debugger_used_on_any_os[debugger]
     use_case_answer_cols = use_case_answer_cols.replace(False, np.nan)
     use_case_answer_cols = use_case_answer_cols.replace(True, "x")
     use_case_by_tool_intermediate = (
         pd.melt(
             use_case_answer_cols,
-            id_vars=[debugger for debugger in debugger_used_on_any_os.keys()],
+            id_vars=[debugger for debugger in debugger_used_on_any_os],
             value_vars=use_case_keys,
             var_name="use-case",
             value_name="value",
@@ -374,7 +374,7 @@ def analyze() -> ChartReport:
         pd.melt(
             use_case_by_tool_intermediate,
             id_vars=["use-case"],
-            value_vars=[x for x in debugger_used_on_any_os.keys()],
+            value_vars=[debugger for debugger in debugger_used_on_any_os],
             var_name="debugger",
             value_name="value",
         )
