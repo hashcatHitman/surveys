@@ -1,0 +1,40 @@
+# SPDX-FileCopyrightText: © 2026 hashcatHitman
+#
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
+version: 2
+
+updates:
+  - package-ecosystem: github-actions
+    cooldown:
+      default-days: 14
+    directory: /
+    schedule:
+      interval: daily
+      time: "00:00"
+      timezone: "Etc/UTC"
+    commit-message:
+      prefix: ops
+      include: scope
+
+  - package-ecosystem: cargo
+    cooldown:
+      default-days: 14
+    directory: /surveyhero
+    schedule:
+      interval: daily
+      time: "00:00"
+      timezone: "Etc/UTC"
+    commit-message:
+      prefix: deps
+
+  - package-ecosystem: pip
+    cooldown:
+      default-days: 14
+    directory: /
+    schedule:
+      interval: daily
+      time: "00:00"
+      timezone: "Etc/UTC"
+    commit-message:
+      prefix: deps
