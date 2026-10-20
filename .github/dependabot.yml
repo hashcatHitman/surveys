@@ -1,0 +1,36 @@
+# SPDX-FileCopyrightText: © 2026 hashcatHitman
+#
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
+version: 2
+
+updates:
+  - package-ecosystem: cargo
+    groups:
+      rust-deps:
+        patterns:
+          - "*"
+    cooldown:
+      default-days: 1
+    directory: /surveyhero
+    schedule:
+      interval: daily
+      time: "00:00"
+      timezone: "Etc/UTC"
+    commit-message:
+      prefix: deps
+
+  - package-ecosystem: pip
+    groups:
+      python-deps:
+        patterns:
+          - "*"
+    cooldown:
+      default-days: 1
+    directory: /
+    schedule:
+      interval: daily
+      time: "00:00"
+      timezone: "Etc/UTC"
+    commit-message:
+      prefix: deps
