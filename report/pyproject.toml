@@ -5,17 +5,17 @@ description = "Helper scripts for survey reports"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "beautifulsoup4>=4.13.4",
+    "beautifulsoup4>=4.15.0",
     "kaleido==1.5.0",
-    "matplotlib==3.7.5",
-    "multiprocess>=0.70.18",
+    "matplotlib==3.10.9",
+    "multiprocess>=0.70.19",
     "nelsie==0.16",
-    "pandas==2.3.1",
-    "pillow>=11.3.0",
-    "plotly>=6",
-    "pyarrow==23.0.1",
-    "tqdm==4.66.3",
-    "wordcloud==1.9.3",
+    "pandas==2.3.3",
+    "pillow>=12.3.0",
+    "plotly>=7.1.0",
+    "pyarrow==25.0.1",
+    "tqdm==4.70.1",
+    "wordcloud==1.9.6",
 ]
 
-optional-dependencies = { debug = ["pudb>=2025.1.5"] }
+optional-dependencies = { debug = ["pudb>=2026.1"] }
