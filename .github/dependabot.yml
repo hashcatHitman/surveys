@@ -1,0 +1,57 @@
+# SPDX-FileCopyrightText: © 2026 hashcatHitman
+#
+# SPDX-License-Identifier: Apache-2.0 OR MIT
+
+version: 2
+
+updates:
+  - package-ecosystem: cargo
+    allow:
+      - dependency-type: all
+    groups:
+      rust-deps:
+        patterns:
+          - "*"
+    cooldown:
+      default-days: 1
+    directories: ["**/*"]
+    schedule:
+      interval: daily
+      time: "00:00"
+      timezone: "Etc/UTC"
+    commit-message:
+      prefix: deps
+
+  - package-ecosystem: pip
+    allow:
+      - dependency-type: all
+    groups:
+      pip-deps:
+        patterns:
+          - "*"
+    cooldown:
+      default-days: 1
+    directories: ["**/*"]
+    schedule:
+      interval: daily
+      time: "00:00"
+      timezone: "Etc/UTC"
+    commit-message:
+      prefix: deps
+
+  - package-ecosystem: uv
+    allow:
+      - dependency-type: all
+    groups:
+      uv-deps:
+        patterns:
+          - "*"
+    cooldown:
+      default-days: 1
+    directories: ["**/*"]
+    schedule:
+      interval: daily
+      time: "00:00"
+      timezone: "Etc/UTC"
+    commit-message:
+      prefix: deps
