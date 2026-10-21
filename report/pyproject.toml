@@ -14,7 +14,7 @@ dependencies = [
     "pillow>=11.3.0",
     "plotly>=6",
     "pyarrow==21.0.0",
-    "tqdm==4.66.1",
+    "tqdm==4.66.3",
     "wordcloud==1.9.3",
 ]
 
