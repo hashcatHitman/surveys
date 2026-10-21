@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>rust-lang/renovate:default", ":semanticCommits"],
+  "vulnerabilityAlerts": {
+    "enabled": true
+  },
+  "osvVulnerabilityAlerts": true,
+  "dependencyDashboardOSVVulnerabilitySummary": "all",
+  "minimumReleaseAge": "7 days",
+  "commitMessageLowerCase": "never",
+  "packageRules": [
+    {
+      "enabled": false,
+      "matchPackageNames": ["*"]
+    }
+  ]
+}
