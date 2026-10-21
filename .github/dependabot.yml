@@ -26,7 +26,24 @@ updates:
     allow:
       - dependency-type: all
     groups:
-      python-deps:
+      pip-deps:
+        patterns:
+          - "*"
+    cooldown:
+      default-days: 1
+    directory: /
+    schedule:
+      interval: daily
+      time: "00:00"
+      timezone: "Etc/UTC"
+    commit-message:
+      prefix: deps
+
+  - package-ecosystem: uv
+    allow:
+      - dependency-type: all
+    groups:
+      uv-deps:
         patterns:
           - "*"
     cooldown:
