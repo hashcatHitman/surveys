@@ -1,0 +1,12 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>rust-lang/renovate:default", ":semanticCommits"],
+  "minimumReleaseAge": "7 days",
+  "commitMessageLowerCase": "never",
+  "packageRules": [
+    {
+      "enabled": false,
+      "matchPackageNames": ["*"]
+    }
+  ]
+}
